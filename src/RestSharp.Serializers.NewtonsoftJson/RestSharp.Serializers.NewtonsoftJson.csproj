@@ -1,13 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <ItemGroup>
-        <PackageReference Include="Newtonsoft.Json"/>
+        <PackageReference Include="Newtonsoft.Json" />
+        <PackageReference Include="SonarAnalyzer.CSharp">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\RestSharp\RestSharp.csproj"/>
+        <ProjectReference Include="..\RestSharp\RestSharp.csproj" />
     </ItemGroup>
     <ItemGroup>
-        <Using Include="Newtonsoft.Json"/>
-        <Using Remove="System.Net.Http"/>
+        <Using Include="Newtonsoft.Json" />
+        <Using Remove="System.Net.Http" />
     </ItemGroup>
     <ItemGroup>
         <None Include="README.md" Pack="true" PackagePath="\" />

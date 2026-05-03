@@ -3,12 +3,18 @@
         <RootNamespace>RestSharp.Serializers.Xml</RootNamespace>
     </PropertyGroup>
     <ItemGroup>
-        <ProjectReference Include="..\RestSharp\RestSharp.csproj"/>
+        <ProjectReference Include="..\RestSharp\RestSharp.csproj" />
     </ItemGroup>
     <ItemGroup>
-        <Using Remove="System.Net.Http"/>
+        <Using Remove="System.Net.Http" />
     </ItemGroup>
     <ItemGroup>
         <None Include="README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="SonarAnalyzer.CSharp">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
     </ItemGroup>
 </Project>

@@ -59,3 +59,5 @@ RestSharp.IntegrationTests/config.json
 *.trx
 .DS_Store
 .grok/
+
+.sonarqube

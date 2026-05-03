@@ -3,14 +3,14 @@
         <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
     </PropertyGroup>
     <ItemGroup>
-        <None Remove="RestSharp.csproj.DotSettings"/>
+        <None Remove="RestSharp.csproj.DotSettings" />
     </ItemGroup>
     <ItemGroup Condition="'$(TargetFramework)' == 'net471' Or '$(TargetFramework)' == 'net48'">
-        <Reference Include="System.Net.Http"/>
-        <Reference Include="System.Web"/>
+        <Reference Include="System.Net.Http" />
+        <Reference Include="System.Web" />
     </ItemGroup>
     <ItemGroup Condition="$(AddPolyfills) == 'true'">
-        <PackageReference Include="Nullable" PrivateAssets="All"/>
+        <PackageReference Include="Nullable" PrivateAssets="All" />
     </ItemGroup>
     <ItemGroup>
         <Compile Update="RestClient.Async.cs">
@@ -31,6 +31,12 @@
     </ItemGroup>
     <ItemGroup Label="Package README">
         <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="SonarAnalyzer.CSharp">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
     </ItemGroup>
     <ItemGroup>
         <Using Include="System.Net" />

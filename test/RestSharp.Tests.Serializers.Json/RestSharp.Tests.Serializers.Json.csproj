@@ -1,16 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <ItemGroup>
-        <ProjectReference Include="$(RepoRoot)\src\RestSharp.Serializers.NewtonsoftJson\RestSharp.Serializers.NewtonsoftJson.csproj"/>
-        <ProjectReference Include="$(RepoRoot)\src\RestSharp\RestSharp.csproj"/>
-        <ProjectReference Include="..\RestSharp.Tests.Shared\RestSharp.Tests.Shared.csproj"/>
+        <ProjectReference Include="$(RepoRoot)\src\RestSharp.Serializers.NewtonsoftJson\RestSharp.Serializers.NewtonsoftJson.csproj" />
+        <ProjectReference Include="$(RepoRoot)\src\RestSharp\RestSharp.csproj" />
+        <ProjectReference Include="..\RestSharp.Tests.Shared\RestSharp.Tests.Shared.csproj" />
     </ItemGroup>
     <ItemGroup>
+      <PackageReference Include="SonarAnalyzer.CSharp">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
       <PackageReference Include="WireMock.Net" />
     </ItemGroup>
     <ItemGroup>
-        <Using Include="WireMock"/>
-        <Using Include="WireMock.Server"/>
-        <Using Include="WireMock.RequestBuilders"/>
-        <Using Include="WireMock.ResponseBuilders"/>
+        <Using Include="WireMock" />
+        <Using Include="WireMock.Server" />
+        <Using Include="WireMock.RequestBuilders" />
+        <Using Include="WireMock.ResponseBuilders" />
     </ItemGroup>
 </Project>
