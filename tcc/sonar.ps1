@@ -5,7 +5,7 @@ dotnet sonarscanner begin `
     /d:sonar.host.url="http://localhost:9000" `
     /d:sonar.token="$sonarToken"
 
-dotnet build ..\RestSharp.slnx
+dotnet build ..\RestSharp.slnx --force
 
 dotnet sonarscanner end `
     /d:sonar.token="$sonarToken"
