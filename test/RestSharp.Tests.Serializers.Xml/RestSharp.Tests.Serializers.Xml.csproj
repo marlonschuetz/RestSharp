@@ -3,12 +3,6 @@
         <Nullable>disable</Nullable>
     </PropertyGroup>
     <ItemGroup>
-      <PackageReference Include="SonarAnalyzer.CSharp">
-        <PrivateAssets>all</PrivateAssets>
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
-    </ItemGroup>
-    <ItemGroup>
         <ProjectReference Include="$(RepoRoot)\src\RestSharp.Serializers.Xml\RestSharp.Serializers.Xml.csproj" />
         <ProjectReference Include="$(RepoRoot)\src\RestSharp\RestSharp.csproj" />
     </ItemGroup>

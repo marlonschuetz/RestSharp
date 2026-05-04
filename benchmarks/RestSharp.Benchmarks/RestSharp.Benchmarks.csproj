@@ -12,10 +12,6 @@
         <PackageReference Include="AutoFixture" />
         <PackageReference Include="BenchmarkDotNet" />
         <PackageReference Include="Microsoft.CodeAnalysis.CSharp" />
-        <PackageReference Include="SonarAnalyzer.CSharp">
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="$(RepoRoot)\src\RestSharp.Serializers.NewtonsoftJson\RestSharp.Serializers.NewtonsoftJson.csproj" />
