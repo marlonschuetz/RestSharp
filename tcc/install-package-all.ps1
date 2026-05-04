@@ -1,4 +1,4 @@
-$packageId = "MagicNumberCodeFix"
+$packageId = Read-Host  "Informe o pacote. Ex: MagicNumberCodeFix ou MagicNumberAnalyser"
 $version = Read-Host "Informe a versao do pacote. Ex: 1.0.0"
 $source = "https://api.nuget.org/v3/index.json"
 

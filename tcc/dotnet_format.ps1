@@ -1,1 +1,0 @@
-dotnet format analyzers ..\src\RestSharp\RestSharp.csproj --diagnostics S109 --severity warn
