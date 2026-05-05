@@ -2,7 +2,7 @@
 $sonarToken = "sqp_31ea512f70a836e5e2cdafa8908ee870156ef5d3"
 
 dotnet sonarscanner begin `
-    /k:"TCC-RestSharp" `
+    /k:"TCC-RestSharp-MagicNumberIssue" `
     /d:sonar.host.url="http://localhost:9000" `
     /d:sonar.token="$sonarToken"
 
