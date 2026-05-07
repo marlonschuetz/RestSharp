@@ -1,5 +1,5 @@
 #$sonarToken = Read-Host "Informe a Sonar token"
-$sonarToken = "sqp_31ea512f70a836e5e2cdafa8908ee870156ef5d3"
+$sonarToken = "sqp_0a43e7fda75a0609b0143aee18508cbbdfec26b2"
 
 dotnet sonarscanner begin `
     /k:"TCC-RestSharp-MagicNumberIssue" `
