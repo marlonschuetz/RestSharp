@@ -1,4 +1,5 @@
-$diagnosticId = Read-Host "Informe a Issue: Ex: S109 ou MAGIC_NUMBER_ISSUE"
+# $diagnosticId = Read-Host "Informe a Issue: Ex: S109 ou MAGIC_NUMBER_ISSUE"
+$diagnosticId = "S109"
 $severity = "warn"
 
 $scriptPath = $PSScriptRoot
@@ -34,7 +35,8 @@ Write-Host "Iniciando formatacao/analisadores..." -ForegroundColor Cyan
 
 dotnet format analyzers $solutionPath `
     --diagnostics $diagnosticId `
-    --severity $severity
+    --severity $severity `
+    -v detailed
 
 if ($LASTEXITCODE -ne 0) {
     Write-Host ""
